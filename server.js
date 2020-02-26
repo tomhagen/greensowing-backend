@@ -12,6 +12,9 @@ const categoryRoutes = require("./routes/category");
 const authRoutes = require("./routes/auth");
 const formRoutes = require("./routes/form");
 const homeRoutes = require("./routes/home");
+const commercialRoutes = require("./routes/commercial");
+const touristRoutes = require("./routes/tourist");
+const projectRoutes = require("./routes/project");
 
 const app = express();
 
@@ -36,6 +39,9 @@ app.use("/api", categoryRoutes);
 app.use("/api", authRoutes);
 app.use("/api", formRoutes);
 app.use("/api", homeRoutes);
+app.use("/api", commercialRoutes);
+app.use("/api", touristRoutes);
+app.use("/api", projectRoutes);
 
 const port = process.env.PORT || 5000;
 
