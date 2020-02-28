@@ -13,7 +13,13 @@ exports.create = (req, res) => {
     carousel_subtitle4,
     about_title,
     about_content,
-    about_subcontent
+    about_subcontent,
+    product_title,
+    product_content,
+    product_greenhouse,
+    product_variety,
+    product_cultivation,
+    product_material
   } = req.body;
   let home = new Home({
     carousel_title1,
@@ -26,7 +32,13 @@ exports.create = (req, res) => {
     carousel_subtitle4,
     about_title,
     about_content,
-    about_subcontent
+    about_subcontent,
+    product_title,
+    product_content,
+    product_greenhouse,
+    product_variety,
+    product_cultivation,
+    product_material
   });
   home.save((err, data) => {
     if (err) {
